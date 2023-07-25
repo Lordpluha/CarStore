@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+@use "sass:math";
+
+// Размер макета
+$MaketWidth: 1600;
+
+// Максимальный поддерживаемый размер сайта
+$SiteMaxWidth: 4000;
+
+// Максимальная ширина контентного блока
+$ContentMaxWidth: 1800;
+
+// Минимальная поддерживаемая ширина
+$SiteMinWidth: 320;
+
+@import "_mixins.scss";
+@import "_zer0.scss";
+@import "_fonts.scss";
+@import "_media.scss";
+@import "_preloader.scss";
+
+// Extended fonts (CDN)
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// Colors
+$coral: #ff3448;
+$grey: #212121; 
+$light-grey: #595959;
+$black: #030303;
+
+* {
+	font-family: 'Lato', sans-serif;	
+}
+
+html {
+	/*
+	Элемент, отвечающий
+	за адаптивность шрифтов
+	всей страницы
+	*/
+	@include adaptive-value('font-size', 15, 20, 1);
+	@include adaptive-value('font-size', 20, 35, 2);
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+body {
+
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	overflow-x: hidden;
+}
+
+#content {
+	display: block;
+	margin: 0 auto;
+	max-width: $ContentMaxWidth+px;
+	// max-width: 100%;
+}
+
+i {
+	font-family: fontawesome !important;
+}
+
+// Красивая загрузка элементов (см. так же в script.js)
+$AnimTime: 1s;
+$AnimDelay: 0s;
+.anim-elem {
+	-webkit-transition: margin, padding .0s linear;
+	   -moz-transition: margin, padding .0s linear;
+	    -ms-transition: margin, padding .0s linear;
+	     -o-transition: margin, padding .0s linear;
+	        transition: margin, padding .0s linear;
+
+	-webkit-transform: translate(0, -100%);
+	   -moz-transform: translate(0, -100%);
+		-ms-transform: translate(0, -100%);
+		 -o-transform: translate(0, -100%);
+			transform: translate(0, -100%);
+	
+	opacity: 0;
+
+	-webkit-transition: opacity   $AnimTime ease-in-out $AnimDelay,
+						transform $AnimTime ease-in-out $AnimDelay;
+	   -moz-transition: opacity   $AnimTime ease-in-out $AnimDelay,
+	   					transform $AnimTime ease-in-out $AnimDelay;
+	    -ms-transition: opacity   $AnimTime ease-in-out $AnimDelay,
+	    				transform $AnimTime ease-in-out $AnimDelay;
+	     -o-transition: opacity   $AnimTime ease-in-out $AnimDelay,
+	     				transform $AnimTime ease-in-out $AnimDelay;
+	        transition: opacity   $AnimTime ease-in-out $AnimDelay,
+	        			transform $AnimTime ease-in-out $AnimDelay;
+
+	&.active-fx {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@import "_header.scss";
+@import "_nav.scss";
+@import "_article.scss";
+@import "_aside.scss";
+@import "_footer.scss";
+
+
+

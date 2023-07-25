@@ -1,0 +1,291 @@
+// Media
+
+/** <-------------------------------- [ For site`s max size (close to "all sizes")] --------------------------------> **/
+@media only screen and (max-width: $SiteMaxWidth+px) {
+	.quick-links {
+		#content {
+			padding: 110px 45px;
+		}
+	}
+	.info {
+		display: flex;
+	}
+	.newsletter {
+		width: 25%;
+
+		&__social {
+			margin-top: auto;
+		}
+	}
+	.brand__slogan {
+		display: block;
+	}
+	.futured-products__elem {
+		font-size: 17px;		
+	}
+	.futured-products__elem-cost {
+		font-size: 25px;
+	}
+	.nav__main {
+		#content {
+			padding: 10px 80px;
+		}
+	}
+	.header-sup {
+		#content {
+			padding: 5px 80px;
+		}
+	}
+	.navigation {
+		background-color: #030303;
+
+		#content {
+			padding: 10px 90px;
+		}
+		&__list {
+			justify-content: flex-start;
+		}
+		&__elem {
+			margin: 0 20px;
+		}
+	}
+	.production__info {
+		padding: 165px 50px;
+	}
+	.brand {
+		display: flex;
+	}
+	.menu {
+		justify-content: flex-end;
+		&__elem {
+			margin: 0 20px;
+		}
+	}
+	.nav__main-menu-elem {
+		&::before {
+			display: inline-block;
+		}
+	}
+	.navigation__list {
+		flex-direction: row;
+	}
+	.futured-products__list {
+		justify-content: space-between;
+	}
+	.special-offers {
+		#content {
+			&::after {
+				display: block;
+			}
+		}
+	}
+	.information__col {
+		width: 33.333%;
+	}
+}
+
+/** <-------------------------------- [ Supper large screens ] --------------------------------> **/
+@media only screen and (min-width: 1824px) {
+	/* стили */	
+}
+
+/** <-------------------------------- [ Big screens ] --------------------------------> **/
+@media only screen and (max-width: 1824px) {
+	
+}
+
+/** <--------------------------- [ Computers and laptops ] ---------------------------> **/
+@media only screen and (max-width: 1280px) {
+	.futured-products__elem {
+		border: 1px solid #626262;
+	}
+}
+
+/** <-------------------------------- [ Plane tables ] --------------------------------> **/
+
+/* Планшеты (вертикальная и горизонтальная) ----------- */
+@media only screen and (max-width: 1024px)  {
+	/* стили */
+}
+
+/* Планшеты (горизонтальная) ----------- */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	/* стили */
+}
+
+/* Планшеты (вертикальная) ----------- */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	/* стили */
+}
+
+
+/** <-------------------------------- [ Smartphones ] <--------------------------------> **/
+
+@media only screen and (max-width: 835px) {
+	.info {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 810px) {	
+	.newsletter {
+		margin-top: 40px;
+		width: 100%;	
+
+		&__social {
+			margin-top: 40px;
+		}
+	}
+
+}
+
+/* Smartphones (вертикальная и горизонтальная) ----------- */
+@media only screen and (max-width: 768px) {
+	.futured-products__elem-name {
+		font-size: 12px;
+	}
+	.futured-products__elem-cost {
+		font-size: 20px;
+	}
+	#content {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	.quick-links, .information {
+		#content {
+			padding-top: 50px !important;
+			padding-bottom: 50px !important;
+		}
+	}
+
+	.navigation__list {
+		justify-content: space-around;
+	}
+	.navigation__elem {
+		margin: 0;
+	}
+	.production__info {
+		padding: 50px 10px;
+	}
+	.navigation {
+		background-color: rgba(0, 0, 0, .5);
+		max-width: 40vw;
+		min-width: 20wv;
+		height: 100%;
+
+		#content {
+			margin: 0 !important;
+		}
+		&__list {
+			flex-direction: column;
+		}
+		&__elem {
+			margin: 10px 0;
+
+			a {
+				text-align: right;
+			}
+		}
+	}
+	.futured-products__list {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.futured-products__elem {
+		width: 33.333%;
+	}
+	.special-offers {
+		#content {
+			flex-direction: column;
+			&::after {
+				display: none;
+			}
+		}
+		&__offer {
+			padding: 0 !important;
+			&--r-side {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+	/* стили */
+}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	/* стили */
+}
+
+// Retina - more dpi in screens (Apple) //
+/* Retina (горизонтальная) ----------- */
+@media only screen and (max-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5){
+	/* стили */
+}
+
+/* Retina (вертикальная) ----------- */
+@media only screen and (max-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1.5){
+	/* стили */
+}
+
+@media only screen and (max-width: 665px) {
+	.brand__slogan {
+		display: none;
+	}
+	.menu {
+		justify-content: space-around;
+		&__elem {
+			margin: 0;
+		}
+	}
+	.information {
+		#content {
+			flex-wrap: wrap;
+		}
+		&__col{
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 584px) {
+	.newsletter,
+	.footer-links {
+		margin-top: 40px;
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 470px) {
+	.nav__brand {
+		display: none;
+	}
+	.nav__main-menu {
+		width: 100%;
+
+		&-elem {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	.futured-products__elem {
+		width: 50%;
+	}
+	.futured-products__list {
+		margin: 40px 0;
+	}
+}
+
+/** <------------------------------ [ Little smartphones] ------------------------------> **/
+
+// Маленькие мобилки
+@media only screen and (max-width: 320px) {
+	/* стили */
+}

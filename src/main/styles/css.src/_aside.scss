@@ -1,0 +1,83 @@
+// Aside
+.aside {
+	width: 100%;
+	background-color: #000;
+}
+.special-offers {
+	width: 100%;
+	background-image: url(../../img/aside/BG.min.webp);
+
+	#content {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+
+		padding: 100px 45px;
+		
+		&::after {
+			position: absolute;
+			content: '';
+			
+			top: 20%;
+			left: 50%;
+
+			width: 2px;
+			height: 60%;
+			background-color: white;
+		}
+	}
+
+	// .special-offers__offer
+	&__offer {
+		text-align: center;
+		height: 100%;
+
+		// .special-offers__offer--l-side
+		&--l-side {
+			padding-right: 20px;
+		}
+		// .special-offers__offer--r-side
+		&--r-side {
+			padding-left: 20px;
+		}
+	}
+	// .special-offers__elem
+	&__elem {
+		color: white;
+	}
+	// .special-offers__percent-offer
+	&__percent-offer {
+		text-transform: uppercase;
+		font-size: 70px;
+		font-weight: 700;
+		line-height: .8;
+	}
+	// .special-offers__order-cost-condition
+	&__order-cost-condition {
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 500;
+		margin-top: 20px;
+		line-height: .8;
+	}
+	// .special-offers__product-items-condition
+	&__product-items-condition {
+		font-size: 13px;
+		line-height: .8;
+		margin-top: 33px;
+	}
+	// .special-offers__submit
+	&__submit {
+		display: inline-block;
+		margin-top: 30px;
+		padding: 10px 30px;
+		width: max-content;
+
+		background-color: $coral;
+		border-radius: 50px;
+		
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}

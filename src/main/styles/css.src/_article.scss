@@ -1,0 +1,150 @@
+// Article
+.article {
+
+}
+// production
+.production {
+	display: flex;
+	flex-flow: row wrap;
+
+	// .production__product
+	&__product {
+		width: 50%;
+		background-color: $light-grey;
+
+		background-position: right center;
+		background-size: 50%;
+
+		&:nth-child(2), &:nth-child(3) {
+			background-color: #1c1c1c;
+		}
+		&:nth-child(1), &:nth-child(4) {
+			background-color: #303030;
+		}
+		&--bg-down {
+			background-position: right bottom;
+		}
+	}
+
+	// .production__info
+	&__info {
+		
+	}
+	
+	// .production__title
+	&__title {
+		@include adaptive-value('font-size', 20, 35, 1);
+		@include adaptive-value('font-size', 35, 45, 2);
+
+		text-transform: uppercase;
+		color: white;
+	}
+
+	// .production__list
+	&__list {
+		font-size: 20px;
+		color: $light-grey;
+	}
+
+	// .production__product-headlights
+	&__product-headlights {
+		background-image: url(../../img/article/productoin/headlights.min.webp);
+	}
+	// .production__product-supporters
+	&__product-supporters {
+		background-image: url(../../img/article/productoin/supporters.min.webp);
+	}
+	// .production__product-discs
+	&__product-discs {
+		background-image: url(../../img/article/productoin/discs.min.webp);
+	}
+	// .production__product-seats
+	&__product-seats {
+		background-image: url(../../img/article/productoin/seats.min.webp);
+	}
+}
+
+// Future products
+.futured-products {
+	background-color: #282828;
+
+	#content {
+		padding: 90px 20px;
+	}
+
+	// .futured-products__title
+	&__title {
+		// margin: 90px auto 0;
+	}
+	// .futured-products__list
+	&__list {
+		display: flex;
+		margin: 65px 0 0;
+	}
+	// .futured-products__elem
+	&__elem {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		background-color: #363636;
+		padding: 20px;
+
+		.futured-products__elem-avatar {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			flex: 1 1 100%;
+			max-height: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+		
+	}
+	// .futured-products__elem-descr
+	&__elem-descr {
+		text-align: center;
+	}
+	// .futured-products__elem-name
+	&__elem-name {
+		color: $coral;
+		text-transform: uppercase;
+	}
+	// .futured-products__elem-cost
+	&__elem-cost {
+		color: white;
+
+		&::before {
+			display: inline;
+			position: relative;
+			content: '$';
+		}
+	}
+	// .futured-products__elem-rate
+	&__elem-rate {
+		color: $coral;
+		font-size: 17px;
+	}
+}
+// .section-title
+.section-title {
+	display: block;
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: white;
+
+	&::after {
+		display: block;
+		position: relative;
+		content: '';
+
+		width: 170px;
+		background-color: $coral;
+		height: 5px;
+		margin: 30px auto 0;
+	}
+}
