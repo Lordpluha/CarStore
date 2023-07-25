@@ -1,0 +1,99 @@
+<!-- Footer.php -->
+		<footer class="footer">
+            <section class="quick-links">
+                <div id="content">
+                    <div class="footer-links quick-links__col">
+                        <h1 class="footer-header footer-links__header">Quick Links</h1>
+                        <ul class="footer-links__list">
+                            <li class="footer-links__link"><a href="#">About Us</a></li>
+                            <li class="footer-links__link"><a href="#">Customer Service</a></li>
+                            <li class="footer-links__link"><a href="#">Privacy Policy</a></li>
+                            <li class="footer-links__link"><a href="#">Site Map</a></li>
+                            <li class="footer-links__link"><a href="#">Search Terms</a></li>
+                            <li class="footer-links__link"><a href="#">Advanced Search</a></li>
+                            <li class="footer-links__link"><a href="#">Orders and Returns</a></li>
+                            <li class="footer-links__link"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links quick-links__col">
+                        <h1 class="footer-header footer-links__header">Quick Links</h1>
+                        <ul class="footer-links__list">
+                            <li class="footer-links__link"><a href="#">About Us</a></li>
+                            <li class="footer-links__link"><a href="#">Customer Service</a></li>
+                            <li class="footer-links__link"><a href="#">Privacy Policy</a></li>
+                            <li class="footer-links__link"><a href="#">Site Map</a></li>
+                            <li class="footer-links__link"><a href="#">Search Terms</a></li>
+                            <li class="footer-links__link"><a href="#">Advanced Search</a></li>
+                            <li class="footer-links__link"><a href="#">Orders and Returns</a></li>
+                            <li class="footer-links__link"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links quick-links__col">
+                        <h1 class="footer-header footer-links__header">Quick Links</h1>
+                        <ul class="footer-links__list">
+                            <li class="footer-links__link"><a href="#">About Us</a></li>
+                            <li class="footer-links__link"><a href="#">Customer Service</a></li>
+                            <li class="footer-links__link"><a href="#">Privacy Policy</a></li>
+                            <li class="footer-links__link"><a href="#">Site Map</a></li>
+                            <li class="footer-links__link"><a href="#">Search Terms</a></li>
+                            <li class="footer-links__link"><a href="#">Advanced Search</a></li>
+                            <li class="footer-links__link"><a href="#">Orders and Returns</a></li>
+                            <li class="footer-links__link"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter quick-links__col">
+                        <h1 class="footer-header newsletter__header">News<wbr>Letter</h1>
+                        <form action="#" class="newsletter__form">
+                            <label name="email-message" class="newsletter__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</label>
+                            <input type="text" name="email-message" class="newsletter__input">
+                            <button type="submit" class="newsletter__submit">Submit</button>
+                        </form>
+                        <ul class="social newsletter__social">
+                            <li class="social__elem"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="social__elem"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="social__elem"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li class="social__elem"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="social__elem"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="information">
+                <div id="content">
+                    <div class="information__info-col information__col">
+                        <h1 class="footer-header information__header information__info-header">Information</h1>
+                        <p class="information__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="information__info-col information__col">
+                        <h1 class="footer-header information__header information__info-header">Information</h1>
+                        <p class="information__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="information__contacts-col information__col">
+                        <h1 class="footer-header information__header information__contacts-header">Contact</h1>
+                        <ul class="information__contacts-list">
+                            <li class="information__contacts-info"><i class="fa-solid fa-location-dot"></i>123, Main Road, Your City, NY 1234</li>
+                            <li class="information__contacts-info"><i class="fa-solid fa-phone"></i>+123 456 7890</li>
+                            <li class="information__contacts-info"><i class="fa-solid fa-clock-nine"></i>7 Days a week from 10:00 am to 6:00 pm</li>
+                            <li class="information__contacts-info"><i class="fa-solid fa-envelope"></i>info@psd.in.ua</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="copyrights">
+                <div id="content">
+                    <h6 class="copyrights__reserved"><a href="#" class="copyrights__link">CarStore ©</a> 2017. All Rights Reserved.</h6>
+                    <ul class="copyrights__payment-sys">
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li>
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-solid fa-closed-captioning"></i></a></li>
+                        <li class="copyrights__payment-cc"><a href="#"><i class="fa-brands fa-cc-diners-club"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+		<?php wp_footer(); ?>
+	</div> <!-- #wrapper -->
+</body>
+</html>
