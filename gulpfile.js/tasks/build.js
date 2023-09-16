@@ -2,7 +2,7 @@
 async function build() {
 	for (var i = 0; i <= $.pages.length; i++) {
 		return $.gulp.src([
-				`./src/${$.pages[i]}/html/index.min.html`,
+				`./src/${$.pages[i]}/html/index.html`,
 				`./src/${$.pages[i]}/styles/css.dist/styles.{min.css, css.map}`,
 				`./src/${$.pages[i]}/php/**/*.{min.php, php}`,
 				`./src/${$.pages[i]}/js/**/*.min.js`,
