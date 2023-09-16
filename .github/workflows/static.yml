@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install deps
-        run: npm i
+        run: npm ci
       - name: Build project
         run: npm run build
       - name: Cache files
