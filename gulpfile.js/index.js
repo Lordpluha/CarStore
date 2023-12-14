@@ -32,7 +32,7 @@ $.updatePagesList = () => {
 	.filter(d => d.isDirectory())
 	.map(d => d.name);
 
-	$.fs.writeFileSync("./gulpfile.js/tasks/vars/pages_list.json", 
+	$.fs.writeFileSync("./gulpfile.js/tasks/vars/pages_list.json",
 		JSON.stringify({pages: pages_dir})
 	);
 }
@@ -49,7 +49,7 @@ $.pages 		  =	JSON.parse(
 // Current page
 $.start_page 	  = 'main';
 // OS Panel on/off
-$.OpenServer_conn = true;
+$.OpenServer_conn = false;
 // Using 'php' only with OpenServer_conn = true!!! (php/html)
 $.main_file_type  = 'php'
 // Server port
@@ -57,7 +57,7 @@ $.port 			  = 8282;
 // Proxy (OS Panel)
 $.proxy 		  = $.Project_name;
 // Https on/off
-$.https 		  = true;
+$.https 		  = false;
 // Certificates dir (working only with https = true)
 $.CertDir		  = './certificates'
 // debug || info
@@ -91,16 +91,19 @@ $.gulp.task('git',   $.tasks['github'].commit);
 
 /* |||||__________________||||| */
 
+const filesProcessing = $.gulp.series(
+	$.tasks['index'].index,
+	$.tasks['index'].php,
+	$.tasks['styles'].styles,
+	$.tasks['scripts'].scripts,
+	$.tasks['images'].images,
+	$.tasks['styles'].fonts
+)
+
 // Main task
 $.gulp.task('default',
 	$.gulp.series(
-		$.tasks['index'].index,
-		$.tasks['index'].php,
-		$.tasks['styles'].styles,
-		$.tasks['scripts'].scripts,
-		$.tasks['images'].images,
-		$.tasks['styles'].fonts,
-		$.tasks['github'].commit,
+		filesProcessing,
 
 		$.gulp.parallel(
 			$.tasks['serve'].browser,
@@ -112,4 +115,4 @@ $.gulp.task('default',
 $.gulp.task('test', defaultTask);
 
 // Build task
-$.gulp.task('build', $.gulp.series($.tasks['clean'].clean, $.tasks['build'].build));
+$.gulp.task('build', $.gulp.series($.tasks['clean'].clean, filesProcessing, $.tasks['build'].build));
